@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <math.h>
+
+int  main()
+{
+	double V = 0.0;
+	double V0 = 25;
+	double Us = 0.85;
+	double m = 1200.0;
+	double g = 9.8;
+
+	double d = (V0 * V0) / (2 * Us * g);
+	printf("최소 정지거리: %.2f m \n", d);
+
+	double g_1 = 1.62;
+	double x = (V0 * V0) / (2 * Us * g_1);
+	printf("자동차가 달에 있을때 최소 정지거리는 %.2f m 입니다. \n", x);
+
+}
